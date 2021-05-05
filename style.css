@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+	margin: 0;
+	padding: 0;
+}
+.feature-row{
+	position: relative;
+}
+
+.feature-text-sec{
+	padding: 221px 20px;
+	width: 50%;
+	
+}
+.feature-text{
+	height: 85vh;
+  
+}
+.feature-text p{
+	font-size: 16px;
+	color: rgb(153, 153, 153);
+	padding: 15px 0;
+}
+.feature-text h3{
+   
+	color: rgb(34, 34, 34); 
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.feature-case{
+	color: rgb(34, 34, 34); 
+	font-size: 18px;
+	font-weight: 400;
+	font-family: Arial;
+	line-height: 5.8;
+}
+.feature-case:hover{
+	color: rgb(34, 34, 34); 
+	text-decoration: none;
+}
+.feature-case:hover i{
+	margin-left: 10px;
+}
+.feature-case i{
+	transform: rotate(45deg);
+	font-size: 22px;
+	transition: 0.4s;
+}
+#feature-image{
+	position: sticky;
+    float: right;
+    top: 30px;
+    background-repeat: no-repeat;
+	background-size: contain;
+    width: 40%;
+    height: calc(100vh - 54px);
+    border-radius: 30px;
+}
+
+@media screen and (max-width:768px){
+	#feature-image {
+		background-size: cover;
+		width: 50%;
+	}
+	.feature-text h3 {
+		font-size: 22px;
+	}
+}
+@media screen and (max-width:550px){
+	.feature-text h3 {
+		font-size: 16px;
+	}
+	.feature-text p {
+		font-size: 13px;
+	}
+	.feature-case {
+		font-size: 13px;
+	}
+	.feature-case:hover i {
+		margin-left: 2px;
+	}
+	.feature-case i {
+		font-size: 14px;
+	}
+}
